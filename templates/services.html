@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+<div class="row text-center" id="page2">
+<div class="col-md-12">
+<h1>SERVICES</h1>
+<p>HOME / SERVICES</p>
+</div>
+</div>
+<div class="row p-5" >
+<div class=" text-center col-md-4 " >
+<img src="{% static 'image/hard drive.jpg' %}" height="300" width="100%" />
+<div class="col-md-12 p-5 border use">
+<h3>Hard Drive,Flash Drive & SSD Destruction</h3>
+<p><span>Clients can simply schedule their hard drive destructionon online and through our website</span></p>
+</div>
+</div>
+
+<div class=" text-center  col-md-4 ">
+<img src="{% static 'image/ewaste.jpg' %}" height="300" width="100%" />
+<div class="col-md-12 p-5 border use">
+<h3>Electronic Waste Collection & Recycling</h3>
+<p>users quickly replace their electronic devices with newer,faster & stronger gadgets on the market</p>
+</div>
+</div>
+
+<div class=" text-center  col-md-4 ">
+<img src="{% static 'image/computer.jpg' %}" height="300" width="100%" />
+<div class="col-md-12 p-5 border use">
+<h3 class="p-1">Electronics & Computer Resale</h3>
+<p class="p-2">Buyers are welcome to leave their best offer on available electronic products</p>
+</div>
+ </div>
+ </div>
+ 
+{% endblock %}

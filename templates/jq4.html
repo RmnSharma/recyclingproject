@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<div class="p-3">
+<img src="{% static 'image/pic 1.jpg' %}" height="200px" width="200px" class="imge" />
+<img src="{% static 'image/pic 2.jpg' %}" height="200px" width="200px" class="imge" />
+<img src="{% static 'image/pic 3.jpg' %}" height="200px" width="200px" class="imge" />
+<img src="{% static 'image/pic 4.jpg' %}" height="200px" width="200px" class="imge" />
+</div>
+
+<div class="col-md-12 p-5" style="position:absolute; top:0px; left:0px; background:rgba(0,0,0,0.8); 
+z-index:9999; display:none;" id="topdiv" >
+<button class="btn btn-danger btn-xs">Close</button>
+<br>
+<img src="{% static 'image/pic 4.jpg' %}" height="500px" width="100%"  />
+</div>
+
+<script src="{% static 'jquery.js' %}"></script>
+<script>
+$(document).ready(function(){
+$(".imge").click(function(){
+var s=$(this).prop('src');
+$("#topdiv img").attr('src',s);
+$("#topdiv").slideDown(1000);
+});
+
+$("#topdiv button").click(function(){
+$("#topdiv").fadeOut(1000);
+});
+});
+</script>
+
+{% endblock %}
+

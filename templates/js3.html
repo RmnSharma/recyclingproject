@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<div class="p-3">
+<h3 id="time"></h3>
+<img src="{% static 'image/pic 1.jpg'%}" height="300px" width="100%" id="i1" />
+</div>
+
+<script>
+var ar=['pic 2.jpg','pic 3.jpg','pic 4.jpg','pic 5.jpg','pic 1.jpg'];
+var i=0;
+var l=ar.length;
+var s=setInterval(f,1000);
+function f()
+{
+document.getElementById('i1').src='/static/image/'+ar[i];
+i++;
+if(i==l)
+  i=0;
+}
+</script>
+
+{% endblock %}

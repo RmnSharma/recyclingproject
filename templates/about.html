@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+
+ <div class="row text-center" id="page3">
+ <div class="col-md-12">
+ <h1><span>ABOUT</span></h1>
+ <h3><span>HOME / ABOUT</h3>
+ </div>
+ </div>
+ 
+ <div class="row text-center" id="welcome">
+ <div class="col-md-10 offset-1">
+ <i class="fa fa-recycle highlight"> </i>
+ <h3>Welcome to Recycling</h3>
+ <h5>Recycling is a method of procedure that includes the collection and breaking down of waste material to create something new out of it.</h5>
+ 
+ <div class="row p-4 text-center " id="icons">
+ <div class="col-md-4  ">
+ <div class="col-md-12 p-4 border " id="font">
+ <i class="fa fa-leaf icon "></i>
+ <h3 class="p-2">Corporate Services</h3>
+ <p>Guaranted that all of your universal waste management is performed safely and responsibly.</p>
+ </div>
+ </div>
+ <div class="col-md-4 ">
+ <div class="col-md-12 p-4 border"id="font">
+ <i class="fa fa-inbox icon"></i>
+ <h3 class="p-2">Convenient Pickup</h3>
+ <p>We offer business pickup services recycle your electronics in a safe manner</p>
+ </div>
+ </div>
+ <div class="col-md-4 ">
+ <div class="col-md-12 p-4 border"id="font">
+ <i class="fa fa-calendar icon"></i>
+ <h3 class="p-2">E-waste Events</h3>
+ <p>We work with non-profits,businesses and other organizations to host community e-waste events</p>
+ </div>
+ </div>
+ </div>
+</div>
+</div>
+<div class="row p-1" id="back">
+<div class="col-md-6 " >
+<img src="{% static 'image/eee.jpg' %}" height="700" width="100%" />
+</div>
+<div  class="col-md-6 p-4" id="ff">
+<i class="fa fa-recycle highlight"> </i>
+<h3>OUR MISSION</h3>
+<p>ABOUT US<p>
+<p>Our mission is to keep as much electronic waste from ending up in local landfills as we can.</p>
+
+<div class="p-3" id="accordion">
+
+  <div class="card" id="rec">
+    <div class="card-header" id="data1">
+      <a class="card-link" data-toggle="collapse" href="#collapseOne">
+        REDUCING WASTE
+      </a>
+    </div>
+    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+      <div class="card-body">
+        The most effective way to reduce waste is to not create it in the first place. Making a new product
+		requires a lot of materials and energy - raw materials must be extracted from the earth, and the product must be fabricated then transported
+		to wherever it will be sold.
+      </div>
+    </div>
+  </div>
+
+  <div class="card" id="rec">
+    <div class="card-header" id="data2">
+      <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+        REDUCE PROGRAM
+      </a>
+    </div>
+    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+      <div class="card-body">
+        It is the order of priority of actions to
+		be taken to reduce the amount of waste generated and to improve overall waste management processes and programs.
+      </div>
+    </div>
+  </div>
+
+  <div class="card" id="rec">
+    <div class="card-header" id="data3">
+      <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+        RECYCLE MORE
+      </a>
+    </div>
+    <div id="collapseThree" class="collapse" data-parent="#accordion">
+      <div class="card-body">
+        Recycling can prevent the waste of potentially useful materials and reduce the consumption of fresh raw materials,
+		thereby reducing: energy usage, air pollution (from incineration), and water pollution (from landfilling).
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+
+<div class="row text-center" id="end">
+<div class="col-md-12">
+<i class="fa fa-recycle highlight"> </i>
+<h1>TESTIMONIALS</h1>
+<p>what client say</p>
+<img src="{% static 'image/profile.PNG' %}" height="150" width="150"  />
+<div class="col-md-8 offset-2" >
+<h5 class="p-5">I felt really comfortable and trust them.They have a lot of security
+ measure in place.Pretty cheap for such great peace of mind!</h5>
+ </div>
+ <div class="row text-center">
+ <div class="col-md-12">
+ <h3>Robert Wade</h3>
+ </div>
+ </div>
+</div>
+</div>
+
+<div class="row p-4" id="bb">
+<div class="col-md-4"  >
+<div class="col-md-12">
+<h5>&nbsp;&nbsp;&nbsp;<i class="fa fa-phone footericon"> </i> &nbsp;&nbsp;&nbsp; 01 23456789</h5>
+<p>40 HORIZON CIRCLE, SAN DIEGO, CA</p>
+</div>
+</div>
+<div class="col-md-4" >
+<div class="col-md-12">
+<h5>&nbsp;&nbsp;&nbsp; <i class="fa fa-clock-o footericon"> </i>&nbsp;&nbsp;&nbsp; OPEN HOURS</h5>
+<p>WEEKDAYS 8.00-18.00, SAT: CLOSED</p>
+</div>
+</div> 
+<div class="col-md-4 ">
+<div class="col-md-12">
+<h5>&nbsp;&nbsp;&nbsp; <i class="fa fa-pencil footericon"> </i>&nbsp;&nbsp;&nbsp;  CONTACT US </h5>
+ <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="recycling@support.com"><span class="text-dark">  recycling@support.com</span></a> </h5>
+</div>
+</div>
+</div>
+
+{% endblock %}

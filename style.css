@@ -1,0 +1,91 @@
+#product{ color:black;   font-family:Britannic;}
+.lightgreen{ background:#9cc026;}
+.darkgreen{ background:#54be73;}
+#logo i{ font-size:40px; color:#54b524;  border:10px shaded green;}
+#logo h1{font-family:Cooper;}
+#nav a{ color:black; font-family:Britannic; border:4px outset #9cc026; margin-right:10px;}
+#nav a:hover{ background:#000; color:#fff;}
+#nav{ background:#d8e0d5;}
+
+
+.carousel-caption{ top:35%;}
+#welcome{ padding-top:100px;padding-bottom:100px;  }
+h3,h5{ font-family:Cooper;}
+#welcome i{ font-size:70px; color:#54b524; padding:70px; border:10px shaded green;}
+#banner h1{ font-family:Cooper; color:#9cc026; }
+#form{ font-family:Cooper;  background:url('image/waste.jpg');  background-size:100% 900px; }
+#form>.col-md-12{ background:rgba(0,0,0,0.7) ; padding-top:150px; padding-bottom:150px; color:white; }
+#button{ padding-top:50px; }
+#service h1{ font-family:Cooper; padding-top:60px; }
+#pic h3{padding-top:30px; padding-bottom:30px; font-family:Cooper; }
+.icon{
+font-size:70px !important;
+color:#27b8a4;
+padding:70px;
+border-radius:100px;
+border:10px shaded green; }
+#font h3,p{ font-family:Cooper;}
+#pic .border{ min-height:380px; }
+#service i{ font-size:60px; color:#54b524; padding-top:40px;padding-bottom:10px; border:10px shaded green;}
+#ff i{font-size:60px; color:#54b524; padding-top:40px;padding-bottom:10px; border:10px shaded green;}
+#ff h3{ font-family:Cooper;}
+
+#end i{font-size:50px; color:#54b524; padding-top:40px;padding-bottom:30px; border:10px shaded green;}
+#end h1{ font-family:Cooper;}
+#end {padding-top:70px;padding-bottom:70px;}
+#end img{  border-radius:150px; }
+#end{ background-color:#f5c64e;}
+#bb {background-color:#54be73;}
+.footericon{font-size:25px; color:#34eb6e; padding:20px; border:8px circle white; background:white; border-radius:70px; }
+#footer {background:#000; color:#fff;}
+#footer.col-md-4{ background:rgba(0,0,0,1.0) ; padding-top:100px; padding-bottom:300px; color:white;}
+#ii i{font-size:30px; color:#54b524; padding-top:40px; padding-bottom:20px; border:10px shaded green;}
+#add i{font-size:20px; color:#54b524; padding-top:40px; padding-bottom:5px; border:10px shaded green; border-radius:50px;}
+#add h6{ font-family:Cooper;}
+#link{padding-top:30px; padding-bottom:20px;}
+
+
+#page2{background:url('image/light.jpg');background-size:100% 850px;}
+#page2 .col-md-12{ background:rgba(0,0,0,0.7) ; padding-top:100px; padding-bottom:350px; color:white;}
+#page2 h1{font-family:Cooper; color:#9cc026;}
+.use {background-color:#ceded1;}
+#link a{ color:white; padding-bottom:10px;}
+
+#page3{background:url('image/light.jpg');background-size:100% 850px;}
+#page3 .col-md-12{ background:rgba(0,0,0,0.7) ; padding-top:100px; padding-bottom:350px; color:white;}
+#page3 h1{font-family:Cooper; color:#9cc026;}
+
+#loc{background:url('image/map.jpg');background-size:100% 900px; padding-top:100px; padding-bottom:100px;}
+#formtransparent{ background:rgba(0,0,0,0.5); color:white; padding:50px; }
+#formtransparent h2{font-family:Cooper; color:#54be73;}
+.color2{color:#54be73;}
+
+#app{background:url('image/rps.jpg');background-size:100% 1000px; padding-top:100px; padding-bottom:100px;}
+.mycls{
+	  color:blue;
+	  text-decoration:underline;
+	  font-size:33px;
+}
+
+.match{color:green; text-decoration:underline;}
+.unmatch{color:red; font-style:italic;}
+
+.imge{cursor:pointer;}
+
+.clr{font-size:15px; color:white; padding:20px; border:10px square white; background:#54be73; border-radius:40px; }
+#aa h2{font-family:Cooper;color:#54be73;} 
+#cc h4{font-family:Cooper;}
+.pp {background-color:#c4c4c4;}
+#mail{font-family:Cooper;}
+.heading h2{font-family:Cooper; color:#17a2b8;}
+.blg{background:url('image/pat.jpg');padding-top:40px; padding-bottom:40px;}
+#back{background-color:#bcebeb;}
+#data1 {font-family:Cooper;background-color:#54be73;}
+#data1 a{color:white ;}
+#rec {color:black;}
+#data2 {font-family:Cooper;background-color:#9cc026;}
+#data2 a{color:white ;}
+#data3 {font-family:Cooper;background-color:#34eb6e;}
+#data3 a{color:white ;}
+#ajit {background-color:#555e58;}
+.lightgreen a{color:black;}

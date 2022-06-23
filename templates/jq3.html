@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<div class="p-3">
+<input type="text" placeholder="password" />
+<input type="text" id="cpass" placeholder="confirm passwoed" />
+<p></p>
+</div>
+
+<script src="{% static 'jquery.js' %}"></script>
+<script>
+$(document).ready(function(){
+$("#cpass").keyup(function(){
+var p=$(this).prev().val();
+var cp=$(this).val();
+if(p==cp)
+{
+$ (this).next().html('password match').removeClass('unmatch').addClass('match');
+$(this).parent().css('background','yellow');
+$(this).siblings().css('background','pink');
+}
+else
+{
+$(this).next().html('password do not match').removeClass('match').addClass('unmatch');
+}
+});
+});
+</script>
+{% endblock %}

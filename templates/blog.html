@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<div class="row text-center" id="page3">
+ <div class="col-md-12">
+ <h1><span>BLOG</h1>
+ <h3><span>HOME / BLOG</span></h3>
+ </div>
+ </div>
+ {% for b in object_list %}
+ <div class="row  blg">
+ <div class="col-md-8 offset-2">
+ <img src="/media/{{ b.pic }}" height="600" width="100%" />
+ </div>
+ <div class="col-md-8 offset-2 p-3 blue ">
+ <h6><span class="text-info">{{ b.poston }} </span> <span>BY {{ b.postby }}<span></h6>
+ </div>
+ <div class="col-md-8 offset-2 p-3 heading">
+ <h2>{{ b.title }}</h2>
+ <p><span>{{ b.description }}</span></p>
+ </div>
+ </div>
+ {% endfor %}
+
+ <!--<div class="row  blg">
+ <div class="col-md-8 offset-2">
+ <img src="{% static 'image/day.jpg' %}" height="600" width="100%" />
+ </div>
+ <div class="col-md-8 offset-2 p-3 blue">
+ <h6><span class="text-info">APRIL 23, 2017 </span> <span>  IN ENVIRONMENT</span></h6>
+ </div>
+ <div class="col-md-8 offset-2 p-3 heading">
+ <h2>HAPPY EARTH DAY!</h2>
+ <p><span> This year's theme focuses on natural processes, emerging green technologies, and innovative thinking that can restore the world's ecosystems. 
+ Today (April 22) is Earth Day, an international event celebrated around the world to pledge support for environmental protection</span></p>
+ </div>
+ </div>
+ 
+ <div class="row  blg">
+ <div class="col-md-8 offset-2">
+ <img src="{% static 'image/paper.jpg' %}" height="600" width="100%" />
+ </div>
+ <div class="col-md-8 offset-2 p-3 blue">
+ <h6><span class="text-info">JANUARY 18, 2017</span> <span> IN RECYCLING </span></h6>
+ </div>
+ <div class="col-md-8 offset-2 p-3 heading">
+ <h2>HOW TO RECYCLE PAPER</h2>
+ <p><span> The most important thing for recycling paper is that there is NO contamination in the recycling bin.
+ The best recycling facilities are operating at a 4-5% contamination rate. It is so important that we recycle properly to try and get to the 1% rate.</span></p>
+ </div>
+
+ </div>-->
+ 
+ 
+ 
+ 
+ 
+  {% endblock %}

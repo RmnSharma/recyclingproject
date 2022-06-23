@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<div class="p-3">
+<input type="text" id="t1" />
+<input type="text" id="t2" />
+<button onclick="f(this.innerHTML)">add</button>
+<button onclick="f(this.innerHTML)">sub</button>
+<button onclick="f(this.innerHTML)">mul</button>
+<button onclick="f(this.innerHTML)">div</button>
+<h3 id="result"></h3>
+</div>
+
+<script>
+function f(x)
+{
+var a=document.getElementById('t1').value;
+var b=document.getElementById('t2').value;
+
+if(x=='add')
+var c=Number(a)+Number(b);
+else if(x=='sub')
+var c=a-b;
+else if(x=='mul')
+var c=a*b;
+else if(x=='div')
+var c=a/b;
+else
+alert('error');
+
+document.getElementById('result').innerHTML+=x +' of ' +a + ' and '+ b +' is'+ c+'<br>';
+}
+</script>
+{% endblock %}

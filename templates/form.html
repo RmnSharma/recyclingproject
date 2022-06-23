@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+
+
+<div class="container">
+<div class="col-md-6 ">
+<form action="/insertform/" method="post">
+{% csrf_token %}
+
+
+<div class="form-group">
+<label for="name">Enter Name</label>
+<input type="text" required class="form-control" id="name" placeholder="enter name" name="name" />
+</div>
+
+<div class="form-group">
+<label for="phone>Enter phone</label>
+<input type="tel"  class="form-control" id="phone" placeholder="enter phone" name="phone"/>
+</div>
+
+<div class="form-group">
+<label for="email">Enter email</label>
+<input type="email" required class="form-control" id="email" placeholder="enter email" />
+</div>
+
+<div class="form-group">
+<label for="password">Enter password</label>
+<input type="password"  class="form-control" id="password" placeholder="enter password" />
+</div>
+
+<div class="form-group">
+<label for="address">Enter address</label>
+<textarea class="form-control" id="name" placeholder="enter address" /></textarea>
+</div>
+
+<div class="form-group">
+<label for="pic">upload pic</label>
+<input type="file" class="form-control" id="pic" placeholder="enter name" />
+</div>
+
+<div class="form-group">
+<label for="gender">gender</label>
+Male<input type="radio" name="gender" />
+Female<input type="radio" name="gender />
+</div>
+
+<div class="form-group">
+<label for="course">course</label>
+<select class="form-control" id="course" >
+<option value="">-select course-</option>
+<option>HTML</option>
+<option>CSS</option>
+<option>PYTHON</option>
+<option>C++</option>
+</select>
+</div>
+
+<div class="form-group">
+<label for="accept">I accept the terms</label>
+<input type="checkbox" />
+</div>
+
+<div class="form-group">
+<input type="submit"  class="btn btn-info"  />
+<input type="reset"  class="btn btn-danger"  />
+</div>
+
+
+</form>
+</div>
+
+</div>
+</body>
+</html>

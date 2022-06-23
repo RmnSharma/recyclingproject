@@ -1,0 +1,11 @@
+from django import forms
+from app1.models import registration
+
+class registrationform(forms.ModelForm):
+	name=forms.CharField(max_length=100)
+	phone=(forms.CharField(max_length=15)
+	email=forms.charField(max_length=80)
+	course=forms.CharField(max_length=50)
+	class Meta:
+		model=registration
+		fields='__all__'

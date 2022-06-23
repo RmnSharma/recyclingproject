@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<div class="row text-center" id="page3">
+ <div class="col-md-12">
+ <h1><span>APPOINTMENT</h1>
+ <h3><span>HOME / APPOINTMENT</h3>
+ </div>
+ </div>
+ 
+ <div class="row text-center p-2" id="app">
+ <div class="col-md-8 offset-2 " id="formtransparent">
+ <h2>Book Appointment</h2>
+ <form  action="/insertapt/" method="post">
+ {% csrf_token %}>
+ <div class="row ">
+ <div class="form-group col-md-8 offset-2">
+ <div class="col-md-12 p-2 input-group">
+ <label for="name"></label>
+ <div class="input-group-prepend">
+<span class="input-group-text"><i class="fa fa-user color2"></i></span>
+</div>
+ <input type="text" required class="form-control" id="name" name="name" placeholder="Full Name" />
+ </div>
+ </div>
+ 
+ <div class="form-group col-md-8 offset-2 ">
+ <div class="col-md-12 p-2 input-group">
+<label for="phone"></label>
+<div class="input-group-prepend">
+<span class="input-group-text"><i class="fa fa-phone color2"></i></span>
+</div>
+<input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone Number" />
+</div>
+</div>
+
+<div class="form-group col-md-8 offset-2 ">
+<div class="col-md-12 p-2 input-group">
+<label for="email"></label>
+<div class="input-group-prepend">
+<span class="input-group-text"><i class="fa fa-envelope color2"></i></span>
+</div>
+<input type="email" class="form-control" id="email" name="email" placeholder="Email Address" />
+</div>
+</div>
+
+<div class="form-group col-md-8 offset-2">
+<div class="col-md-12 p-2 input-group">
+<label for="date"></label>
+<div class="input-group-prepend">
+<span class="input-group-text"><i class="fa fa-calendar color2"></i></span>
+</div>
+<input type="date" class="form-control" id="date" name="date" placeholder="Appiontment Date" />
+</div>
+</div>
+
+<div class="form-group col-md-8 offset-2">
+<div class="col-md-12 p-2 input-group">
+<label for="time"></label>
+<div class="input-group-prepend">
+<span class="input-group-text"><i class="fa fa-clock-o color2"></i></span>
+</div>
+<input type="time" class="form-control" id="time" name="time" placeholder="Appiontment Time" />
+<select class="form-control">
+<option value="">Select Time</option>
+<option>Morning</option>
+<option>Afternoon</option>
+<option>Evening</option>
+</select>
+</div>
+</div>
+
+
+<div class="form-group col-md-8 offset-2">
+<div class="col-md-12 p-2 input-group">
+<label for="subject"></label>
+<div class="input-group-prepend">
+<span class="input-group-text"><i class="fa fa-flag color2"></i></span>
+</div>
+<input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" />
+</div>
+</div>
+
+<div class="form-group col-md-8 offset-2 ">
+<div class="col-md-12 p-2 input-group">
+<label for="message"></label>
+<div class="input-group-prepend">
+<span class="input-group-text"><i class="fa fa-comment-o color2"></i></span>
+</div>
+<input type="text" class="form-control" id="message" name="message" placeholder="enter message" />
+</div>
+ </form>
+ </div>
+ 
+ <div class="col-md-12 p-4">
+<button class=" btn btn-success">Submit</button>
+</div>
+ </div>
+</div> 
+</div>
+ 
+ {% endblock %}

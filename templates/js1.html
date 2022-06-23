@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<div class="p-3">
+<input type="password" id="pass" placeholder="password"/>
+<input type="password" onkeyup="f(this.value)" placeholder="confirm password"/>
+<button onclick="g(this.innerHTML)"></button>
+<p id="para"></p>
+</div>
+
+<script>
+function f(x)
+{
+var p=document.getElementById('pass').value;
+if(x==p)
+{
+document.getElementById('para').innerHTML="password match";
+document.getElementById('para').style.color="green";
+}
+else
+{
+document.getElementById('para').innerHTML="password do not match";
+document.getElementById('para').style.color="red";
+}
+}
+function g(x)
+{
+var x=document.getElementById('pass');
+if(x.type=="password")
+ x.type='text';
+else
+ x.type='password';
+}
+</script>
+{% endblock %}
+
